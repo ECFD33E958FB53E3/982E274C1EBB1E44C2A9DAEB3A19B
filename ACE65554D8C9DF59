@@ -54,12 +54,13 @@ UIS.InputBegan:connect(function(Input, GPE)
         local further = findFurthestPart(game.Players.LocalPlayer.Character.Torso.Position)
         Holding = true
             wait(0.01)
-            if getgenv().closestgoal == true then
+            if _G.settingstable.closestgoal == true then
+			_G.settingstable.fullcourt = false then
        lookthat.Size = Vector3.new(1000, 1000, 1000) 
        wait(1)
    lookthat.Size = Vector3.new(1, 1, 1) 
    end
-    if getgenv().fullcourt == true then
+    if _G.settingstable.fullcourt == true then
      further.Size = Vector3.new(1000, 1000, 1000)
      wait(1)
      lookthat.Size = Vector3.new(1, 1, 1) 
