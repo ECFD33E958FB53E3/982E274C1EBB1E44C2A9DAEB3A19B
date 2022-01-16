@@ -61,6 +61,7 @@ UIS.InputBegan:connect(function(Input, GPE)
    lookthat.Size = Vector3.new(1, 1, 1) 
    end
     if _G.settingstable.fullcourt == true then
+    _G.settingstable.closestgoal = false
      further.Size = Vector3.new(1000, 1000, 1000)
      wait(1)
      lookthat.Size = Vector3.new(1, 1, 1) 
