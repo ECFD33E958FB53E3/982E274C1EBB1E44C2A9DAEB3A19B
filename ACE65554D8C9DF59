@@ -66,5 +66,8 @@ UIS.InputBegan:connect(function(Input, GPE)
      wait(1)
      lookthat.Size = Vector3.new(1, 1, 1) 
      end
+     if _G.settingstable.none == true then
+      lookthat.Size = Vector3.new(1, 1, 1) 
+      further.Size = Vector3.new(1, 1, 1) 
             end
 end)
